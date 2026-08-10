@@ -96,10 +96,12 @@ useEffect(() => {
       <section className="products">
         <div className="products-header">
           <h2>Our Top Categories</h2>
-          <span className="sort-by">Sorted By:</span>
-          <button className="filter-toggle-btn" onClick={() => setIsFilterOpen(true)}>
-            All Category <span className="settings-icon">⚙️</span>
-          </button>
+          <div className="products-header-controls">
+            <span className="sort-by">Sorted By:</span>
+            <button className="filter-toggle-btn" onClick={() => setIsFilterOpen(true)}>
+              All Category <span className="settings-icon">⚙️</span>
+            </button>
+          </div>
         </div>
 
         <div className="card-container">
